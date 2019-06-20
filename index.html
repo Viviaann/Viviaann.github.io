@@ -145,11 +145,13 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 
-								<!--<form action="https://formspree.io/leeviv168@gmail.com" method="POST">
-   								 <input type="text" name="name">
-    							 <input type="email" name="email">
-    							<input type="submit" value="Send">
-    							</form>-->
+								<!--
+								<button onclick="myFunction()">Try it</button>
+
+									
+
+									
+								-->
 								<header>
 									<h2>Contact Me</h2>
 								</header>
@@ -170,7 +172,20 @@
 												<textarea name="message" placeholder="Message" rows="6"></textarea>
 											</div>
 											<div class="col-12">
-												<input type="submit" value="Send Message" />
+												<input type="submit" onclick="myFunction()" value="Send Message" />
+												<p id="demo"></p>
+												<script>
+													function myFunction() {
+										  				var txt;
+										  				var r = confirm("Press a button!");
+										  				if (r == true) {
+										    				txt = "You pressed OK!";
+										  				} else {
+										    				txt = "You pressed Cancel!";
+										  				}
+										  				document.getElementById("demo").innerHTML = txt;
+														}
+												</script>
 											</div>
 											<input type="hidden" name="_next" value="https://viviaann.github.io/#contact"/>
 											</form>
